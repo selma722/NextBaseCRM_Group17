@@ -1,5 +1,5 @@
 package TestCases;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TC03 {
 
+    private static java.lang.Object WebDriverManager;
+
     public static void main(String[] args) {
 
-        WebDriverManager.chromedriver().setup();
+       // WebDriverManager.chromedriver().setup();
         WebDriver driver= new ChromeDriver();
         String url="https://login2.nextbasecrm.com";
         driver.get(url);
