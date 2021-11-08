@@ -21,9 +21,10 @@ public class TC03 {
         loginBtn.click();
 
         String actualTitle = driver.getTitle();
-        String expectedTitle = "nextbasecrm";
+        String expectedTitle = "Authorization";
 
         System.out.println(actualTitle.equals(expectedTitle) ? "Pass": "Failed");
+
 
 
 
